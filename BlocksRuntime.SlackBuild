@@ -45,7 +45,7 @@ find . \
 cd ..
 mkdir -p $PRGNAM-build
 cd $PRGNAM-build
-cmake \
+CC=/usr/bin/clang cmake \
   -DCMAKE_C_FLAGS:STRING="$SLKCFLAGS" \
   -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS" \
   -DCMAKE_INSTALL_PREFIX=/usr \
